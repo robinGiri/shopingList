@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "serve": "nodemon server.js"
+    "serve": "nodemon server.js",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run serve\" \"npm run frontend\""
   },
   "author": "Robin Giri",
   "license": "MIT",
